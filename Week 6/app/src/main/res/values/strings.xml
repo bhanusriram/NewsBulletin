@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Main Activity</string>
+    <string name="SC">Show Categories</string>
+    <string name="BGO">Go</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cherr.inclass06.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewShowCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="41dp"
+        android:hint="@string/SC" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewShowCategories"
+        android:layout_alignBottom="@+id/textViewShowCategories"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:text="@string/BGO" />
+
+    <ImageView
+        android:id="@+id/imageViewPrev"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="31dp"
+        app:srcCompat="@drawable/prev" />
+
+    <ImageView
+        android:id="@+id/imageViewNext"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/buttonGo"
+        android:layout_alignTop="@+id/imageViewPrev"
+        app:srcCompat="@drawable/next" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonGo"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonGo"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="14dp"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imageViewUrlImage"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewTime"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewUrlImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewPrev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:textAlignment="center" />
+</RelativeLayout>
